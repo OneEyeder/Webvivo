@@ -1,0 +1,550 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 24px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+.menu-icon img {
+    max-width: 30px;
+}
+
+/* Slider Section */
+.slider {
+    background: url(./img/Slider.png);
+    padding-top: 189px;
+    padding-bottom: 100px;
+    min-height: 811px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container__slider {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: white;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 74px;
+}
+
+.description {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Get__in_touch {
+    color: #FFD723;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/* Deation Section */
+.deation-container {
+    padding-top: 150px;
+    color: #4D533C;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Deation__title {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.spiski {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+}
+
+.Heading__ul {
+    font-size: 24px;
+}
+
+.Disc__ul {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #21384299;
+}
+
+.button_ul {
+    color: #FFD723;
+    font-size: 22px;
+}
+
+.button_ul1 {
+    color: gray;
+    font-size: 22px;
+}
+
+/* Get Started Section */
+.get__started {
+    position: relative;
+    top: 180px;
+    padding: 70px 0;
+    width: 88%;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+    background-color: #fafafa;
+}
+
+.get__started__title {
+    padding-top: 45px;
+    color: #4D533C;
+    font-size: 65px;
+    font-weight: 700;
+    padding-left: 350px;
+}
+
+.get__started__link {
+    color: #FFD723;
+    font-size: 22px;
+    font-weight: 700;
+    padding-left: 350px;
+}
+
+/* Footer Section */
+.footer__container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.footer__top {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 52px;
+    border-bottom: 1px solid #5D6544;
+}
+
+footer {
+    padding-top: 30px;
+    background-image: url(./img/FooterBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-contacts-text {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 40px;
+    color: #B6C197;
+}
+
+.footer-contacts-value {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contacts-item:not(:last-child) {
+    margin-right: 128px;
+}
+
+.footer__midle {
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px 0;
+    border-bottom: 1px solid #5D6544;
+}
+
+.footer-title-list {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.ul__footer_list {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 40px;
+}
+
+.footer-item {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #B6C197;
+}
+
+.footer-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-desc {
+    font-weight: 400;
+    color: #B6C197;
+    margin-bottom: 20px;
+}
+
+.footer-mail {
+    line-height: 38px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+.footer-bottom small {
+    padding-left: 600px;
+    color: #B5C096;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        max-width: 80%;
+    }
+
+    .menu-icon img {
+        max-width: 25px;
+    }
+
+    .slider {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .container__slider {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .Get__in_touch {
+        font-size: 16px;
+    }
+
+    .Deation__title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .spiski {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Heading__ul {
+        font-size: 18px;
+    }
+
+    .Disc__ul {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .button_ul, .button_ul1 {
+        font-size: 18px;
+    }
+
+    .get__started__title {
+        font-size: 36px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .get__started__link {
+        font-size: 18px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer__top {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__midle {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bottom small {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer-contacts-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-list {
+        margin-bottom: 40px;
+    }
+
+    .footer-mail {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .Get__in_touch {
+        font-size: 14px;
+    }
+
+    .get__started__title {
+        font-size: 28px;
+    }
+
+    .get__started__link {
+        font-size: 16px;
+    }
+}
+/* Для экранов мобильных телефонов */
+@media (max-width: 767px) {
+    .header-container {
+        flex-direction: column; /* Логотип и меню будут располагаться друг под другом */
+        align-items: center;
+    }
+
+    .slider {
+        padding-top: 100px; /* Уменьшаем верхний отступ для более компактного отображения */
+        padding-bottom: 50px;
+        min-height: 500px; /* Меньше высота для мобильных устройств */
+    }
+
+    .container__slider {
+        padding: 0 15px; /* Добавим немного отступов */
+    }
+
+    .subtitle {
+        font-size: 14px; /* Уменьшаем шрифт */
+    }
+
+    .title {
+        font-size: 36px; /* Уменьшаем шрифт заголовка */
+        line-height: 42px;
+    }
+
+    .description {
+        font-size: 16px; /* Уменьшаем описание */
+    }
+
+    .Get__in_touch {
+        font-size: 15px; /* Меньше размер кнопки */
+    }
+
+    .Deation__title {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .spiski {
+        flex-direction: column; /* Изменяем направление списка на вертикальное */
+        gap: 20px;
+    }
+
+    .Heading__ul {
+        font-size: 18px;
+    }
+
+    .Disc__ul {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+
+    .button_ul, .button_ul1 {
+        font-size: 16px; /* Уменьшаем размер кнопок */
+    }
+
+    .get__started {
+        width: 100%; /* Устанавливаем ширину блока на 100% */
+        padding: 40px 20px; /* Уменьшаем отступы */
+        top: 0;
+    }
+
+    .get__started__title {
+        font-size: 32px; /* Уменьшаем размер заголовка */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .get__started__link {
+        font-size: 18px; /* Уменьшаем размер текста в кнопке */
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .footer__container {
+        padding: 0 10px; /* Добавляем небольшие отступы */
+    }
+
+    .footer__top {
+        margin-top: 80px; /* Уменьшаем отступы */
+        flex-direction: column; /* Переводим элементы в столбец */
+        padding-bottom: 30px;
+    }
+
+    .footer__midle {
+        display: flex;
+        flex-direction: column; /* Ставим в один столбец */
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .footer-bottom {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-bottom small {
+        padding-left: 0;
+        font-size: 12px; /* Уменьшаем размер текста */
+    }
+
+    .footer-contacts-item {
+        margin-right: 0; /* Убираем отступы между контактами */
+        margin-bottom: 10px;
+    }
+
+    .footer-item {
+        font-size: 14px; /* Уменьшаем размер текста в списках */
+    }
+
+    .footer-mail {
+        font-size: 20px; /* Уменьшаем размер почты */
+    }
+
+    .social-item {
+        margin-right: 10px; /* Добавляем небольшие отступы между иконками соцсетей */
+    }
+}
+
+/* Для экранов телефонов с шириной меньше 376px */
+@media (max-width: 375px) {
+    .title {
+        font-size: 28px; /* Делаем заголовок еще меньше */
+    }
+
+    .description {
+        font-size: 14px; /* Меньше описание */
+    }
+
+    .subtitle {
+        font-size: 12px; /* Меньше подзаголовок */
+    }
+
+    .footer__midle {
+        display: block; /* Делаем список в одну колонку */
+        padding: 20px 0;
+    }
+
+    .footer-contacts-item {
+        margin-bottom: 5px;
+    }
+
+    .footer-title-list {
+        font-size: 14px; /* Меньше размер текста для заголовков в футере */
+    }
+
+    .footer-item {
+        font-size: 12px; /* Меньше размер элементов списка */
+    }
+
+    .footer-desc {
+        font-size: 12px; /* Меньше описание в футере */
+    }
+
+    .footer-mail {
+        font-size: 16px; /* Меньше размер почты */
+    }
+}
